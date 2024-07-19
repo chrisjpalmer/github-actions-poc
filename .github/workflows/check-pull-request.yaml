@@ -12,7 +12,6 @@ jobs:
 
       - name: Merge with target branch
         run: |
-          git remote set-url origin https://github.com/${{ github.repository }}
           git fetch origin
           git merge origin/${{ github.base_ref }} --no-ff --no-squash --no-edit
 
