@@ -18,5 +18,5 @@ docker-build:
 docker-run:
 	docker run --rm github-actions-poc
 
-act-pull:
-	act -v pull_request
+check-pull-request:
+	act --var github.base_ref=main pull_request
